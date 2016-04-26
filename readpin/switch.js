@@ -14,6 +14,10 @@ var path = require("path");
 var datastore = require("./datastore");
 var mqtt = require("./mqtt");
 
+var config = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "config.json"))
+);
+
 
 var m = require('mraa'); //require mraa
 console.log('MRAA Version: ' + m.getVersion()); //write the mraa version to the console
