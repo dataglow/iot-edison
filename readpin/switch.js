@@ -3,6 +3,18 @@
 // Leave the above lines for propper jshinting
 //Type Node.js Here :)
 
+// The program is using the Node.js built-in `fs` module
+// to load the config.json and any other files needed
+var fs = require("fs");
+
+// The program is using the Node.js built-in `path` module to find
+// the file path to needed files on disk
+var path = require("path");
+
+var datastore = require("./datastore");
+var mqtt = require("./mqtt");
+
+
 var m = require('mraa'); //require mraa
 console.log('MRAA Version: ' + m.getVersion()); //write the mraa version to the console
 
@@ -19,13 +31,23 @@ function periodicActivity() //
 {
   var myDigitalValue =  myDigitalPin.read(); //read the digital value of the pin
   console.log('Gpio is ' + myDigitalValue +' '+Date()); //write the read value out to the console
+  log("switch level is "+ myDigitalValue);
   setTimeout(periodicActivity,1000); //call the indicated function after 1 second (1000 milliseconds)
   
   myOnboardLed.write(myDigitalValue?1:0); //if ledState is true then write a '1' (high) otherwise write a '0' (low)
     
 }
 
+// Store record in the remote datastore and/or mqtt server
+// when access control event has occurred
+function log(event) {
+  var msg = new Date().toISOString() + " " + event;
+  console.log(msg);
 
+  var payload = { value: msg };
+  datastore.log(config, payload);
+  mqtt.log(config, payload);
+}
 
 
 
