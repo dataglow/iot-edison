@@ -1,0 +1,11 @@
+{
+  "name": "readswitch",
+  "description": "",
+  "version": "0.0.0",
+  "main": "switch.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "Android",
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "icon.png": {
+        "previousModTime": 1461139651122,
+        "modified": 1461139651122,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "main.js": {
+        "previousModTime": 1461151035503,
+        "modified": 1461151035503,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1461667581111,
+        "modified": 1461667581111,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1461139651123,
+        "modified": 1461139651123,
+        "seen": true,
+        "name": "README.md"
+      },
+      "readpin.xdk": {
+        "previousModTime": 1461139651324,
+        "modified": 1461139651324,
+        "seen": true,
+        "name": "readpin.xdk"
+      },
+      "readpin.xdke": {
+        "previousModTime": 1461599575699,
+        "modified": 1461599575699,
+        "seen": true,
+        "name": "readpin.xdke"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1461139651306,
+        "modified": 1461139651306,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      },
+      "switch.js": {
+        "previousModTime": 1461667647713,
+        "modified": 1461667647713,
+        "seen": true,
+        "name": "switch.js"
+      }
+    },
+    "boardFileStatus": {
+      "icon.png": {
+        "previousModTime": 1461667673953
+      },
+      "main.js": {
+        "previousModTime": 1461667673953
+      },
+      "package.json": {
+        "previousModTime": 1461667673953
+      },
+      "README.md": {
+        "previousModTime": 1461667673953
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1461667673953
+      },
+      "switch.js": {
+        "previousModTime": 1461667673953
+      }
+    }
+  }
+}
